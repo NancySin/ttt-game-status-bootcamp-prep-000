@@ -23,19 +23,19 @@ def won?(board)
 end
 
 def full?(board)
-  board.all?{|token| token == "X" || token == "0"}
+  board.all?{|token| token == "X" || token == "O"}
 end
 
 def draw?(board)
-  full?(board) && !won?(board)
+ full?(board) && !won?(board)
 end
 
 def over?(board)
- full?(board) || won?(board) || draw?(board)
+  full?(board) || won?(board) || draw?(board)
 end
 
 def winner(board)
-  if winning_combination = won?(board)
-      board[winning_cimbination.first]
-   end
-end
+ if winning_combination = won?(board)
+   board[winning_combination.first]
+  end
+end 
