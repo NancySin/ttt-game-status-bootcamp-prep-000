@@ -39,4 +39,3 @@ def winner(board)
       board[winning_cimbination.first]
    end
 end
-
